@@ -1,6 +1,7 @@
 # Code-quiz
 
-## Summary
+## Summar
+The purpose of this application is to have a timed coding quiz that showcases dynamically created JS elements.
 
 # Technologies Used
 * HTML
@@ -10,3 +11,4 @@
 # Website Screenshot
 
 # Website link
+https://josephw143.github.io/Code-Quiz/
