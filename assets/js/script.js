@@ -1,8 +1,11 @@
-var timer = getElementById('timer');
-var op1 = getElementById('op1');
-var op2 = getElementById('op2');
-var op3 = getElementById('op3');
-var op4 = getElementById('op4');
+var timer = document.getElementById('timer');
+var op1 = document.getElementById('op1');
+var op2 = document.getElementById('op2');
+var op3 = document.getElementById('op3');
+var op4 = document.getElementById('op4');
+var quizHead = document.getElementById('quizHead');
+var mainContainer = document.getElementById('mainContainer');
+var startButton = document.getElementById('start')
 
 var questionsArray = [
     {
@@ -36,3 +39,21 @@ var questionsArray = [
         answer: 0
     },
 ]
+
+var pageLoad = function () {
+    var quizHead = document.createElement('h2')
+    quizHead.textContent = "Ansewer the following questions relating to code. Keep in mind that you are being timed and a wrong answer will penalize you by 10 seconds";
+    mainContainer.appendChild(quizHead);
+
+    var startBtn = document.createElement('button');
+    startBtn.textContent = "start";
+    startBtn.addEventListener('click', startGame)
+    mainContainer.appendChild(startButton);
+
+};
+
+var startGame = function() {
+
+}
+
+pageLoad();
